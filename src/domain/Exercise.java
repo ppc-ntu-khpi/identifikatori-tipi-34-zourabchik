@@ -1,6 +1,9 @@
 package domain;
-
+/** Вычисление функции Аккермана
+* @author Katia Zourab
+*/
 public class Exercise {
+	
 	public static int recursion(int m, int n) {
 		 /** Базовый случай */
 		if (m == 0) {
