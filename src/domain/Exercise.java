@@ -4,18 +4,18 @@ package domain;
 */
 public class Exercise {
 	
-	public static int recursion(int m, int n) {
+	public static int recursion(int i, int j) {
 		 /** Базовый случай */
-		if (m == 0) {
-			return n + 1;
+		if (i == 0) {
+			return j + 1;
 			}
 		/** Шаг рекурсии/рекурсивное условие */
-		else if (n == 0 && m > 0) {
-			return recursion(m - 1, 1);
+		else if (j == 0 && i > 0) {
+			return recursion(i - 1, 1);
 			} 
 		/** Шаг рекурсии/рекурсивное условие */
 		else {
-			return recursion(m - 1, recursion(m, n - 1));
+			return recursion(i - 1, recursion(i, j - 1));
 			}
 		}
 }
